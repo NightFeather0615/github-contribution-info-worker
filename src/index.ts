@@ -24,7 +24,7 @@ export default {
 					"User-Agent": "Cloudflare-Workers"
 				},
 				body: JSON.stringify({
-					"query": "query { user(login: \"NightFeather0615\") { repositoriesContributedTo( contributionTypes: [PULL_REQUEST] first: 6 orderBy: {field: STARGAZERS, direction: DESC} ) { nodes { owner { login } name description url stargazerCount primaryLanguage { name } } } } }"
+					"query": "query { user(login: \"NightFeather0615\") { repositoriesContributedTo( contributionTypes: [PULL_REQUEST] first: 6 orderBy: {field: STARGAZERS, direction: DESC} ) { nodes { owner { login } name description url stargazerCount forkCount primaryLanguage { name color } } } } }"
 				})
 			}
 		);
